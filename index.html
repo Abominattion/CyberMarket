@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - CyberMarket</title>
+    <meta property="og:image" content="images/share.jpg" />
+    <meta name="twitter:image" content="images/share.jpg" />
+    <meta itemprop="image" content="images/share.jpg" />
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/208bc104ce.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <section>
+        <div class="cyber-auth">
+            <div class="logo">
+                <a href=""><img src="images/logo.png" alt="Logo CyberMarket">Cyber<b>Market</b></a>
+            </div>
+
+            <div class="cyber-auth-content">
+                <div class="auth-links">
+                    <ul>
+                        <li><a href="register.html">Crie sua conta</a></li>
+                        <li class="active-list"><a href="index.html" class="active-link">Acesse sua conta</a></li>
+                    </ul>
+                </div>
+
+                <div class="auth-facebook">
+                    <div class="auth-facebook-btn">
+                        <a href="#"><i class="fab fa-facebook-square"></i> Entrar com Facebook</a>
+                    </div>
+                </div>
+
+                <div class="auth-form">
+                    <form action="#" method="post">
+
+                       <div class="form-group">
+                        <input type="email" name="email" placeholder="Seu email ou usuário"> 
+                        <span><i class="fas fa-at"></i></span>
+                       </div>
+
+                       <div class="form-group">
+                        <input id="password" type="password" name="password" placeholder="Sua senha">
+                        <span><i class="fas fa-key"></i></span>
+                        <button id="seePasswd" type="button" onclick="changeIcon(this)"><i id="changeIcon" class="far fa-eye"></i></button>
+                       </div>
+
+                       <div class="forget">
+                           <a href="">Esqueci minha senha</a>
+                       </div>
+
+                       <div class="submit">
+                           <div class="left-submit">
+                               <a href="register.html">Não tem uma conta?</a>
+                           </div>
+
+                           <div class="right-submit">
+                               <button type="submit">Entrar</button>
+                           </div>
+                       </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="auth-footer">
+                <a href="#">Central de Ajuda</a>&nbsp;—
+                &nbsp;
+                <a href="#">Termos de Uso</a>&nbsp;—
+                &nbsp;
+                <a href="#">Política de Privacidade</a>
+            </div>
+        </div>
+    </section>
+  
+    <script src="js/script.js"></script>
+</body>
+</html>

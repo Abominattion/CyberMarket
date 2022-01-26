@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700,900');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./../images/bg/bg-1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.cyber-auth {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 420px;
+    height: 100%;
+    padding: 32px;
+    background: #fff;
+}
+
+.logo img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #555555;
+    font-size: 1.5em;
+}
+
+.cyber-auth-content {
+    margin: 1.5rem 0;
+}
+
+.auth-links ul {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+
+}
+
+.auth-links ul li {
+    list-style: none;
+    border-bottom: 1px solid #848a91;
+    padding: 20px 0;
+    width: 100%;
+    margin-right: 1px;
+}
+
+.auth-links ul li:hover,
+.auth-links ul li.active-list {
+    border-bottom: 2px solid #51c1c3;
+}
+
+.auth-links ul li:hover a {
+    color: #51c1c3;
+}
+
+.auth-links a {
+    text-decoration: none;
+    padding: 12px;
+    color: #848a91;
+    margin-right: 1px;
+    font-weight: 600;
+}
+
+.auth-links a:hover,
+.auth-links a.active-link {
+    color: #51c1c3;
+}
+
+.auth-facebook {
+    margin: 16px 0;
+    text-align: center;
+}
+
+.auth-facebook-btn a {
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    padding: 18px;
+    border-radius: 0.5rem;
+    background: #3B5998;
+    border-color: #2d4373;
+    color: #fff;
+    filter: brightness(110%);
+}
+
+.auth-facebook-btn a:hover {
+    filter: brightness(100%);
+}
+
+.form-group {
+    margin: 1rem 0;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 16px 16px 16px 48px;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    color: #848a91;
+    font-size: 1em;
+}
+
+.form-group input:focus {
+    outline: none !important;
+    border: 1px solid #51c1c3;
+    box-shadow: 0 0 10px #51c1c3;
+}
+
+.form-group span {
+    position: absolute;
+    margin-top: 15px;
+    left: 50px;
+    color: #848a91;
+}
+
+.form-group button {
+    position: absolute;
+    margin-top: 18px;
+    right: 50px;
+    border: none;
+    color: #848a91;
+    cursor: pointer;
+}
+
+.form-group button i {
+    font-size: 1.2em;
+}
+
+.form-group button i:hover {
+    color: #51c1c3;
+}
+
+.forget {
+    text-align: end;
+}
+
+.forget a {
+    text-decoration: none;
+    color: #848a91;
+}
+
+.forget a:hover {
+    text-decoration: underline;
+    color: #51c1c3;
+}
+
+.submit {
+    margin-top: 130px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-submit a {
+    text-decoration: none;
+    color: #848a91;
+}
+
+.left-submit a:hover {
+    text-decoration: underline;
+    color: #51c1c3;
+}
+
+.right-submit button {
+    border: none;
+    display: inline-block;
+    width: 180px;
+    padding: 12px;
+    border-radius: 0.5rem;
+    font-size: 1em;
+    font-weight: 700;
+    background: #006E2F;
+    color: #fff;
+    cursor: pointer;
+    filter: brightness(110%);
+}
+
+.right-submit button:hover {
+    filter: brightness(100%);
+}
+
+.auth-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.auth-footer a {
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.auth-footer a {
+    text-decoration: none;
+    color: #848a91;
+}
+
+.auth-footer a:hover {
+    text-decoration: underline;
+    color: #51c1c3;
+}
+
+@media screen and (max-width: 900px) {
+    .submit {
+        margin-top: 80px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    
+    .cyber-auth {
+        width: 100%;
+    }
+
+    .submit {
+        margin-top: 70px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .cyber-auth {
+        padding: 20px;
+    }
+
+    .auth-links a {
+        font-size: 0.6em;
+    }
+
+    .form-group input {
+        width: 100%;
+        padding: 14px 14px 14px 46px;
+    }
+
+    .form-group span {
+        left: 35px;
+    }
+
+    .form-group button {
+        right: 35px;
+    }
+
+    .forget a {
+        font-size: 0.8em;
+    }
+
+    .right-submit button {
+        width: 130px;
+    }
+
+    .auth-footer {
+        display: block;
+    }
+}
